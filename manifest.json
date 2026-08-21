@@ -1,0 +1,71 @@
+{
+  "format": "github-pages-multifile",
+  "entry": "index.html",
+  "games": [
+    {
+      "slug": "pno431",
+      "path": "games/pno431/index.html",
+      "bytes": 4909466,
+      "sha256": "a703e8965d54420d593269632babae8966ee8c4ef61a386f06bb61e11183282c",
+      "assets": [
+        {
+          "path": "games/pno431/assets/acne-layer.png",
+          "bytes": 60948,
+          "sha256": "d51880f3414f56adc80cfbd6717e0153e8f14f53f33e63e12fe3dbb409691446"
+        },
+        {
+          "path": "games/pno431/assets/dull-layer.png",
+          "bytes": 72250,
+          "sha256": "2a17a52d44f8ac1e24f5d69961dd2da8d4b4fb745007a8c399d2d50a463c7fe4"
+        },
+        {
+          "path": "games/pno431/assets/makeup-layer.png",
+          "bytes": 81611,
+          "sha256": "34da4749bee0087116dbb3b45440f859b54c6ad6afd929463732bf467e67ad20"
+        }
+      ]
+    },
+    {
+      "slug": "pno379",
+      "path": "games/pno379/index.html",
+      "bytes": 4673480,
+      "sha256": "7e0935c2060cc85c4c5e1b7509eb4432db201431f07c87bd64d0b7de85a7ccf2"
+    },
+    {
+      "slug": "pno352",
+      "path": "games/pno352/index.html",
+      "bytes": 2806450,
+      "sha256": "e300281e0084ac517acc5162a5d1d0e92a88d87256f347f2f9650fe3a025269b"
+    },
+    {
+      "slug": "management",
+      "path": "games/management/index.html",
+      "bytes": 4546401,
+      "sha256": "f2e00786477d5597d9037a04329b9849f3c4942d340415cd12522301b8346067"
+    },
+    {
+      "slug": "pno280",
+      "path": "games/pno280/index.html",
+      "bytes": 4540291,
+      "sha256": "c5c57473f5364cb1f02726db30db0d37c6d7464f83d32992d5aa62ae8535204c"
+    },
+    {
+      "slug": "pno188",
+      "path": "games/pno188/index.html",
+      "bytes": 3657343,
+      "sha256": "80dfde720bde9752f112c1a2b4968d43405b5d5d3dd0b301c4fd3bee9b141a99"
+    },
+    {
+      "slug": "pno257",
+      "path": "games/pno257/index.html",
+      "bytes": 4765314,
+      "sha256": "650720d87c41f078b45c3970ada7a19365b14b91d8dfa17cb0611ddf074e4962"
+    },
+    {
+      "slug": "pno256",
+      "path": "games/pno256/index.html",
+      "bytes": 4765334,
+      "sha256": "d44d194ff1d0786808d62a001c91fb611748cc799b34fa7dd042f647e10f9038"
+    }
+  ]
+}
