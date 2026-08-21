@@ -1,0 +1,386 @@
+{
+  "format": "github-pages-multifile",
+  "entry": "index.html",
+  "games": [
+    {
+      "slug": "pno431",
+      "path": "games/pno431/index.html",
+      "bytes": 4910059,
+      "sha256": "d25863e72343a0aab477e38e18e40bafb46b81e3c16698d7cd77250046aba5d9",
+      "assets": [
+        {
+          "path": "games/pno431/assets/acne-layer.png",
+          "bytes": 60946,
+          "sha256": "462bf836f5cf20209586d8085e2464babfe1e5a396fff41fd0e726253fa1c4e3"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-00.png",
+          "bytes": 2089,
+          "sha256": "a27a843e14aad02f7ce5fad980686e01cb4a60a908c5f846058024fe66c486bd"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-01.png",
+          "bytes": 67058,
+          "sha256": "a9fa3ad3ae6f996b963c19d4f3e4e4eaf04cc6ebd701391925daa758d5df757a"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-02.png",
+          "bytes": 67385,
+          "sha256": "5ca8e7e8ac6e35015def29d0fde562d788531318901bcc20aff6407134fd9ed5"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-03.png",
+          "bytes": 68622,
+          "sha256": "45bbc1a2fb3d7e993702dc80364c17a790c80784503c2c13345624cb61377894"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-04.png",
+          "bytes": 70456,
+          "sha256": "297ffffff1b25f7413bca4fd8d235c097264c50c6cda9660671f0e664fccd788"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-05.png",
+          "bytes": 70582,
+          "sha256": "6d5827b9af1bc6d1a214de7444e918d0496bf3bafd6610b8f129b3e0ac4f3a41"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-06.png",
+          "bytes": 70772,
+          "sha256": "d0f10fec47af76dd50ee12626c79225918c99f82409ca82a0edbd2381505d62b"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-07.png",
+          "bytes": 71435,
+          "sha256": "abae83a00d8b98ba4884f892bf677a50490305e156163c10b40260d6860c4d2f"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-08.png",
+          "bytes": 71453,
+          "sha256": "605e39f0a0349c95b5e882db621a32bb3ec9a768ac3b1d673ebab44e0541ce78"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-09.png",
+          "bytes": 71568,
+          "sha256": "843b2583aa059b12b984c453a8059a9055dcc1c186c15af390f72b533388a6db"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-10.png",
+          "bytes": 71743,
+          "sha256": "3db07f5dad6ad6d3b8517d11c7fd3a6205bea89d43deefb6c24c5ff5a2bc1623"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-11.png",
+          "bytes": 71923,
+          "sha256": "4bafcb3fefdf6d78815f87ef71eafbb0fc42c783e04fa91567925d573ee816bc"
+        },
+        {
+          "path": "games/pno431/assets/frames/dull-12.png",
+          "bytes": 72173,
+          "sha256": "caae90835a3d5cb1ca21a1c2da4b370f5aae3ef367cee61650a6563e4ba198b3"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-00.png",
+          "bytes": 1054,
+          "sha256": "a98ac50f3cb59759b42263475f430037b482b18255bae72294b899abada5e855"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-01.png",
+          "bytes": 157514,
+          "sha256": "ab0469831f4936f82d3a788b9018ba03a16e19c55e87c6a224049ad05aad9b71"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-02.png",
+          "bytes": 159386,
+          "sha256": "5899768b1716bd246988cd01a5b5d1f4d8e27a98c5e341deda7638fab73070c6"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-03.png",
+          "bytes": 161168,
+          "sha256": "d85175222b6d7266c804f63e43c85baaa145cb72e589d6fb0cc85a4ef491bf33"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-04.png",
+          "bytes": 162099,
+          "sha256": "dbba3a1cb2465e2d766b33984eb8bb946f38310e81d4f5b3a6ff186702c99bbc"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-05.png",
+          "bytes": 162811,
+          "sha256": "0f0c48dc6944f36812370a1e316ad5163ffe60c6b62e45922c709d82031ef9dd"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-06.png",
+          "bytes": 163658,
+          "sha256": "882919eca182923c0b7107db39730cb6ad5432fda7bb32605506f7805c50a6c8"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-07.png",
+          "bytes": 164144,
+          "sha256": "a5a86e38d81039adc75d8a21bc435b7d33e559a35556a3001abad50529429031"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-08.png",
+          "bytes": 164620,
+          "sha256": "7b02b5aada1b5447b7c0477110ce8d1c08e815665c80f8b9d68bc16e33de82c8"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-09.png",
+          "bytes": 165062,
+          "sha256": "4a35e9fb2f02f9dc4be6409ac255921cb55d005a55a9d090dda6d4defe240a52"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-10.png",
+          "bytes": 165156,
+          "sha256": "3d1fb062cd310fe320960d80630b55fd7dfdfa1b11d18066872f7a778a54cd7f"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-11.png",
+          "bytes": 165875,
+          "sha256": "40dcb9cd5e7ae0ed98d742c262058c257adfa9ae41cfa5d78d8b9674123f9a18"
+        },
+        {
+          "path": "games/pno431/assets/frames/foam-12.png",
+          "bytes": 166051,
+          "sha256": "2828ef1d741d457096e85e2d0e8f5fcfacc42fba5763ce95cd7b48b15bcbb80c"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-00.png",
+          "bytes": 2089,
+          "sha256": "a27a843e14aad02f7ce5fad980686e01cb4a60a908c5f846058024fe66c486bd"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-01.png",
+          "bytes": 25660,
+          "sha256": "9cbb43f8607d297c653a6c05cde1085e8facddc795adcf141300d9d29477712b"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-02.png",
+          "bytes": 27264,
+          "sha256": "04fb8c709cc57f59276d9ea9d4ec6edd52d7c560d4a5246885ae6c87488d3f05"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-03.png",
+          "bytes": 27941,
+          "sha256": "a4cfcbcdc3367a89b2e4ff9dd721a4c62287c403dc788f8b2e373edd8886887f"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-04.png",
+          "bytes": 29003,
+          "sha256": "6d2ed0a1b67f5c3c8368ccc6025573d3ddc6b28494d948c76f6294441fd8233d"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-05.png",
+          "bytes": 29093,
+          "sha256": "210c5915dc6dd4df91e37e439c919acd559bca4ca77eab0dabf82f1dcbd01210"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-06.png",
+          "bytes": 29531,
+          "sha256": "4cfabb4ad3a928261df422f4bfc410b6981fb328c3044ca4ef7badc3152eda2d"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-07.png",
+          "bytes": 29675,
+          "sha256": "56d0f7c1d991976246f72831f44a909d9c2d30fbfceec857658f2baef0dc70fc"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-08.png",
+          "bytes": 29903,
+          "sha256": "78b4e5af72b3a86a996eb887bd19ea9f079cfb2a8104def200a1ac0efef7d61b"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-09.png",
+          "bytes": 29862,
+          "sha256": "b3d4a2ead16f868a7d537c971780afdf6323d31a054b80a427a3decdd117ccb3"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-10.png",
+          "bytes": 29912,
+          "sha256": "c74c64109a5ace144726dcf95220d7913a153a22722e9fdb0aa75b10f124d5f5"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-11.png",
+          "bytes": 29697,
+          "sha256": "aa0a1e75692557f1be7272c76ffbac0a2782dc34d1b67c5f1502d5a6ab97da20"
+        },
+        {
+          "path": "games/pno431/assets/frames/glow-12.png",
+          "bytes": 29473,
+          "sha256": "0e68341d4ea6ca0f4689d1d72ca955b393dce29193ffb645ab68d5e3c96537d6"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-00.png",
+          "bytes": 2089,
+          "sha256": "a27a843e14aad02f7ce5fad980686e01cb4a60a908c5f846058024fe66c486bd"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-01.png",
+          "bytes": 75700,
+          "sha256": "150bd65455f03c4895b1abfd62a69d330cf0fff8c726167e6f81dc1c44bbf9fb"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-02.png",
+          "bytes": 76717,
+          "sha256": "679d0c722b3edce75970cbce4f1ec7f1fc33f567cb079cbcb95fb622904d0c7a"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-03.png",
+          "bytes": 78219,
+          "sha256": "a6a96e36a7b312b107ef87fe391efbb95d4cd3d29b537bcde848875efebab1dc"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-04.png",
+          "bytes": 79763,
+          "sha256": "dad0bafcdf3ac1ed52a2c97c7377d88ac44c8da0c084c54146d7bb2cccb18a9e"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-05.png",
+          "bytes": 79990,
+          "sha256": "694d1605ce4770e815ed3e586eef503fc02f589f812e7f9140e2220ad53247bd"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-06.png",
+          "bytes": 80060,
+          "sha256": "c079d5dc149d30a2e43d87257f2306e8f505567f5b5a001a6a7d0b8d7b6458f5"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-07.png",
+          "bytes": 80705,
+          "sha256": "876d1022c72b56cd4da98bf9cae9d2269f061eea9ddeedc07b134a4d2a152d75"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-08.png",
+          "bytes": 80836,
+          "sha256": "542deb9f096250ed7647f8ed8dbdbeee1605b10d26876c0aa9ae59295388c4ba"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-09.png",
+          "bytes": 81013,
+          "sha256": "7330e30cdf29ad0d2f5c1d32be8bc8284b33d353227b56df88a37d2ba66fa65c"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-10.png",
+          "bytes": 81110,
+          "sha256": "a14db6fa9103bd5e3e8f1dec8381b831970b5b7ad8838975b96685e2bb290653"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-11.png",
+          "bytes": 81446,
+          "sha256": "b8111578a06e604cadc7666d77e80b8ea2dd391eb859d0e977b47e93d3029266"
+        },
+        {
+          "path": "games/pno431/assets/frames/makeup-12.png",
+          "bytes": 81575,
+          "sha256": "1ec839296f7366969126a29750e783d4328fa3f96e9db175c76829fbf11de459"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-00.png",
+          "bytes": 2089,
+          "sha256": "a27a843e14aad02f7ce5fad980686e01cb4a60a908c5f846058024fe66c486bd"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-01.png",
+          "bytes": 11053,
+          "sha256": "06e0366da60d0a4bbba6fec51065b232a00e31fe290d6ce7411d139dbac5a9c3"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-02.png",
+          "bytes": 11868,
+          "sha256": "bbda357e8681497c7f9ce26778afd0257bfdc82bdc93951f1c715802f69acbd2"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-03.png",
+          "bytes": 12414,
+          "sha256": "213330c84b47ace4e6cf052e977890a0ac0f9075ef3dfe618abb3f83382b7aee"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-04.png",
+          "bytes": 12981,
+          "sha256": "83b34456ad068d4f5aeb88ef79f1c47e159537b990ecd148d86ec7dc0d6ae4e8"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-05.png",
+          "bytes": 13216,
+          "sha256": "46b300611af131c68c3aa7e2f26a2cc35a39bca1290014661cc040388f9f0e80"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-06.png",
+          "bytes": 13413,
+          "sha256": "611379102e574aacbd8fd45db43b6bdb27a129a2f95269bf5e6ba22a0e3ee0ee"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-07.png",
+          "bytes": 13858,
+          "sha256": "540dfc39ba9991ea78effe9591d87602f3dc1cc5f68d876aad6486d2a076c2c2"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-08.png",
+          "bytes": 14016,
+          "sha256": "23fadf8b237a525546f6e6b2ed483605efb5a0a0cd5c206f7939bacfe22687b0"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-09.png",
+          "bytes": 14185,
+          "sha256": "242298571aa49c07ccb6f94e0a28b4b211cb742315673af30eeaf56d5b6f3655"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-10.png",
+          "bytes": 14253,
+          "sha256": "61ed3a80c234f9592483c447c7c84f0f4c0df03073b044fc2c4bd24c78ac7615"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-11.png",
+          "bytes": 14365,
+          "sha256": "ad59420183cf89663a1ce8b0037d3883f16227540152ec1680c8c21a7d24dc8d"
+        },
+        {
+          "path": "games/pno431/assets/frames/residue-12.png",
+          "bytes": 14431,
+          "sha256": "537547ac02d8b385cf6418b6a938ecfc538b1c527d72ab6e1b18fea7065c841d"
+        }
+      ]
+    },
+    {
+      "slug": "pno379",
+      "path": "games/pno379/index.html",
+      "bytes": 4673480,
+      "sha256": "7e0935c2060cc85c4c5e1b7509eb4432db201431f07c87bd64d0b7de85a7ccf2"
+    },
+    {
+      "slug": "pno352",
+      "path": "games/pno352/index.html",
+      "bytes": 2806450,
+      "sha256": "e300281e0084ac517acc5162a5d1d0e92a88d87256f347f2f9650fe3a025269b"
+    },
+    {
+      "slug": "management",
+      "path": "games/management/index.html",
+      "bytes": 4546401,
+      "sha256": "f2e00786477d5597d9037a04329b9849f3c4942d340415cd12522301b8346067"
+    },
+    {
+      "slug": "pno280",
+      "path": "games/pno280/index.html",
+      "bytes": 4540291,
+      "sha256": "c5c57473f5364cb1f02726db30db0d37c6d7464f83d32992d5aa62ae8535204c"
+    },
+    {
+      "slug": "pno188",
+      "path": "games/pno188/index.html",
+      "bytes": 3657343,
+      "sha256": "80dfde720bde9752f112c1a2b4968d43405b5d5d3dd0b301c4fd3bee9b141a99"
+    },
+    {
+      "slug": "pno257",
+      "path": "games/pno257/index.html",
+      "bytes": 4765314,
+      "sha256": "650720d87c41f078b45c3970ada7a19365b14b91d8dfa17cb0611ddf074e4962"
+    },
+    {
+      "slug": "pno256",
+      "path": "games/pno256/index.html",
+      "bytes": 4765334,
+      "sha256": "d44d194ff1d0786808d62a001c91fb611748cc799b34fa7dd042f647e10f9038"
+    }
+  ]
+}

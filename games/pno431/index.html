@@ -83,7 +83,7 @@
       pointer-events: none;
       -webkit-user-drag: none;
     }
-    #pillow { z-index: 2; opacity: 0; transform: translateY(8%); transition: opacity .55s ease, transform .7s ease; filter: drop-shadow(0 10px 14px rgba(70,91,125,.12)); }
+    #pillow { z-index: 2; visibility: hidden; opacity: 1; transform: none; transition: none; filter: drop-shadow(0 10px 14px rgba(70,91,125,.12)); }
     #body-group {
       position: absolute;
       inset: 0;
@@ -105,11 +105,11 @@
     #dull-layer { z-index: 4; }
     #acne-layer { z-index: 5; }
     #makeup-layer { z-index: 6; }
-    #dress, #pajamas { z-index: 7; transition: opacity .5s ease, transform .7s cubic-bezier(.16,.84,.24,1); }
-    #dress { opacity: 1; }
-    #pajamas { opacity: 1; transform: translateY(120%) scale(.96); }
-    #care-glow { position: absolute; z-index: 7; left: 30%; top: 29%; width: 40%; aspect-ratio: .82; border-radius: 48%; opacity: 0; pointer-events: none; background: radial-gradient(ellipse, rgba(255,242,185,.58), rgba(255,255,255,0) 68%); filter: blur(8px); transition: opacity .25s linear; }
-    #foam-layer { z-index: 8; opacity: 0; transition: opacity .16s linear; }
+    #dress, #pajamas { z-index: 7; opacity: 1; transform: none; transition: none; }
+    #dress { visibility: visible; }
+    #pajamas { visibility: hidden; }
+    #care-glow { z-index: 7; }
+    #foam-layer { z-index: 8; }
     #pimple-guides {
       position: absolute;
       inset: 0;
@@ -175,7 +175,7 @@
     #stage.sleeping #mask-pack-shell { opacity: 0; }
     #hair-front { z-index: 14; }
     #headband { z-index: 15; }
-    #blanket { z-index: 20; opacity: 0; transform: translateY(34%); transition: opacity .55s ease, transform .8s cubic-bezier(.2,.9,.25,1); }
+    #blanket { z-index: 20; visibility: hidden; opacity: 1; transform: none; transition: none; }
     #sleep-z-large, #sleep-z-small, #heart {
       z-index: 30;
       opacity: 0;
@@ -190,10 +190,10 @@
     #stage.terminal #heart { opacity: 1; transform: scale(1) rotate(0); }
     #stage.terminal #heart { animation: heart-pop 1.8s ease-in-out infinite; }
     #stage.terminal #body-group { animation: rest 5.5s ease-in-out infinite; }
-    #stage.outfit-changed #dress { opacity: 0; transform: scale(.95); }
-    #stage.outfit-changed #pajamas { opacity: 1; transform: translateY(0) scale(1); }
+    #stage.outfit-changed #dress { visibility: hidden; }
+    #stage.outfit-changed #pajamas { visibility: visible; }
     #stage.sleeping { background: radial-gradient(circle at 50% 31%, #5e739b, transparent 42%), linear-gradient(#243354 0 72%, #405073 72% 100%); }
-    #stage.sleeping #pillow, #stage.sleeping #blanket { opacity: 1; transform: translateY(0); }
+    #stage.sleeping #pillow, #stage.sleeping #blanket { visibility: visible; }
     #stage.sleeping #sleep-transition { opacity: 0; }
 
     #sleep-transition {
@@ -364,10 +364,7 @@
       animation: target-pulse 1.1s ease-in-out infinite;
     }
     #target-guide.visible { opacity: 1; transform: translate(-50%,-50%) scale(1); }
-    #residue-group { position: absolute; inset: 0; z-index: 10; opacity: 0; transition: opacity .18s linear; pointer-events: none; }
-    #stage[data-phase="dry"] #residue-group { opacity: var(--residue-opacity, 1); }
-    .residue { z-index: 8; }
-    #stage.mask-applied #residue-group { opacity: 0; }
+    #residue-layer { z-index: 10; }
 
     #pickup-field.locked .pickup { pointer-events: none; }
     #stage.terminal #pickup-field { opacity: 1; }
@@ -534,23 +531,19 @@
       <div id="body-group">
         <img id="hair-back" class="sprite" data-asset="hair-back" data-pos="161 799 794" alt="">
         <img id="skin-clean" class="sprite" data-asset="skin-clean" data-pos="137 522 805" alt="">
-        <img id="dull-layer" class="face-layer" src="assets/dull-layer.png" alt="" aria-hidden="true">
+        <img id="dull-layer" class="face-layer" src="assets/frames/dull-12.png" alt="" aria-hidden="true">
         <img id="acne-layer" class="face-layer" src="assets/acne-layer.png" alt="" aria-hidden="true">
         <div id="pimple-guides" aria-hidden="true">
           <i class="pimple-marker" data-pimple="forehead" style="left:45.74%;top:40.10%"></i>
           <i class="pimple-marker" data-pimple="right-cheek" style="left:58.33%;top:50.78%"></i>
           <i class="pimple-marker" data-pimple="left-cheek" style="left:40.83%;top:53.96%"></i>
         </div>
-        <img id="makeup-layer" class="face-layer" src="assets/makeup-layer.png" alt="" aria-hidden="true">
+        <img id="makeup-layer" class="face-layer" src="assets/frames/makeup-12.png" alt="" aria-hidden="true">
         <img id="dress" class="sprite" data-asset="dress" data-pos="120 1371 842" alt="">
         <img id="pajamas" class="sprite" data-asset="pajamas" data-pos="103 1208 878" alt="">
-        <div id="care-glow"></div>
-        <img id="foam-layer" class="sprite" data-asset="foam" data-pos="328 551 423" alt="">
-        <div id="residue-group">
-          <img class="sprite residue" data-asset="foam-residue-1" data-pos="394 981 96" alt="">
-          <img class="sprite residue" data-asset="foam-residue-2" data-pos="541 730 99" alt="">
-          <img class="sprite residue" data-asset="foam-residue-3" data-pos="625 927 90" alt="">
-        </div>
+        <img id="care-glow" class="face-layer" src="assets/frames/glow-00.png" alt="" aria-hidden="true">
+        <img id="foam-layer" class="sprite framed-sprite" src="assets/frames/foam-00.png" data-pos="328 551 423" alt="" aria-hidden="true">
+        <img id="residue-layer" class="face-layer" src="assets/frames/residue-00.png" alt="" aria-hidden="true">
         <img id="lash-right-bottom" class="sprite makeup-detail" data-asset="lash-right-bottom" data-pos="583 865 148" alt="">
         <img id="lash-left-bottom" class="sprite makeup-detail" data-asset="lash-left-bottom" data-pos="344 867 148" alt="">
         <img id="eye-closed-left" class="sprite" data-asset="eye-closed-left" data-pos="360 818 138" alt="">
@@ -647,8 +640,18 @@
 (() => {
   "use strict";
 
+  window.__PA_ERRORS__ = [];
+  window.addEventListener("error", event => {
+    window.__PA_ERRORS__.push({ type: "error", message: event.message, line: event.lineno, column: event.colno });
+  });
+  window.addEventListener("unhandledrejection", event => {
+    window.__PA_ERRORS__.push({ type: "unhandledrejection", message: String(event.reason) });
+  });
+
   const W = 1080;
   const H = 1920;
+  const FRAME_STEPS = 12;
+  const FRAME_FAMILIES = ["makeup", "dull", "foam", "residue", "glow"];
   const PORTRAIT_CHARACTER_SHIFT_Y = 210;
   const SHIFTED_SCENE_IDS = new Set(["pillow", "sleep-z-large", "sleep-z-small", "heart", "blanket"]);
   const stage = document.getElementById("stage");
@@ -656,10 +659,10 @@
   const dullLayer = document.getElementById("dull-layer");
   const acneLayer = document.getElementById("acne-layer");
   const makeupLayer = document.getElementById("makeup-layer");
-  const faceLayers = [dullLayer, acneLayer, makeupLayer];
   const foamLayer = document.getElementById("foam-layer");
   const careGlow = document.getElementById("care-glow");
-  const residueGroup = document.getElementById("residue-group");
+  const residueLayer = document.getElementById("residue-layer");
+  const faceLayers = [dullLayer, acneLayer, makeupLayer, careGlow, residueLayer];
   const bodyGroup = document.getElementById("body-group");
   const instructionCopy = document.getElementById("instruction-copy");
   const progressFill = document.getElementById("progress-fill");
@@ -905,7 +908,7 @@
   }
 
   function placeSprites() {
-    document.querySelectorAll("[data-asset]").forEach(node => {
+    document.querySelectorAll("[data-asset], .framed-sprite").forEach(node => {
       const source = bank[node.dataset.asset];
       if (source && node.tagName === "IMG" && !node.closest("#asset-bank")) node.src = source.src;
       if (!node.dataset.pos) return;
@@ -1002,8 +1005,26 @@
   }
 
   function retireFaceLayer(layer) {
-    layer.style.opacity = "0";
     layer.style.display = "none";
+  }
+
+  function framePath(family, index) {
+    const bounded = Math.max(0, Math.min(FRAME_STEPS, Math.round(index)));
+    return `assets/frames/${family}-${String(bounded).padStart(2, "0")}.png`;
+  }
+
+  function showFrame(layer, family, index) {
+    const bounded = Math.max(0, Math.min(FRAME_STEPS, Math.round(index)));
+    const key = `${family}:${bounded}`;
+    if (layer.dataset.frame !== key) {
+      layer.dataset.frame = key;
+      layer.src = framePath(family, bounded);
+    }
+    layer.style.display = bounded === 0 ? "none" : "block";
+  }
+
+  function frameForProgress(progress) {
+    return Math.round(Math.max(0, Math.min(1, progress)) * FRAME_STEPS);
   }
 
   function logicalPoint(event) {
@@ -1132,27 +1153,25 @@
     updateProgress(0);
 
     if (config.id === "foam") {
-      makeupLayer.style.opacity = "0";
-      foamLayer.style.opacity = "0.14";
+      retireFaceLayer(makeupLayer);
+      showFrame(foamLayer, "foam", 2);
     } else if (config.id === "rinse") {
-      foamLayer.style.opacity = "1";
+      showFrame(foamLayer, "foam", FRAME_STEPS);
       acneLayer.style.visibility = "hidden";
     } else if (config.id === "dry") {
-      dullLayer.style.opacity = "0";
-      residueGroup.style.setProperty("--residue-opacity", "1");
+      retireFaceLayer(dullLayer);
+      showFrame(residueLayer, "residue", FRAME_STEPS);
     } else if (config.id === "extract") {
-      residueGroup.style.setProperty("--residue-opacity", "0");
-      acneLayer.style.opacity = "1";
+      retireFaceLayer(residueLayer);
       piercedPimples.clear();
       pimpleMarkers.forEach(marker => marker.classList.remove("cleared", "applying", "medicated"));
     } else if (config.id === "repair") {
-      acneLayer.style.opacity = "1";
-      careGlow.style.opacity = "0.08";
+      showFrame(careGlow, "glow", 1);
       medicatedPimples.clear();
       medicineProgress.clear();
       pimpleMarkers.forEach(marker => marker.classList.remove("cleared", "applying", "medicated"));
     } else if (config.id === "mask") {
-      careGlow.style.opacity = "0.28";
+      showFrame(careGlow, "glow", 4);
     } else if (config.id === "cucumber_left") {
       stage.classList.add("mask-applied");
     }
@@ -1254,15 +1273,15 @@
     if (config.id === "lashes_right") stage.classList.add("right-lashes-removed");
     if (config.id === "lashes_left") stage.classList.add("left-lashes-removed");
     if (config.id === "makeup_pad") retireFaceLayer(makeupLayer);
-    if (config.id === "foam") foamLayer.style.opacity = "1";
+    if (config.id === "foam") showFrame(foamLayer, "foam", FRAME_STEPS);
     if (config.id === "rinse") {
       retireFaceLayer(dullLayer);
-      foamLayer.style.opacity = "0";
+      retireFaceLayer(foamLayer);
       acneLayer.style.visibility = "visible";
     }
-    if (config.id === "dry") residueGroup.style.setProperty("--residue-opacity", "0");
+    if (config.id === "dry") retireFaceLayer(residueLayer);
     if (config.id === "mask") {
-      careGlow.style.opacity = "0";
+      retireFaceLayer(careGlow);
       stage.classList.add("mask-applied");
     }
     if (stageIndex === STAGES.length - 1) {
@@ -1286,13 +1305,20 @@
       spawnParticle(point, "water");
     }
 
-    if (config.id === "foam") foamLayer.style.opacity = String(0.14 + progress * 0.86);
-    if (config.id === "makeup_pad") makeupLayer.style.opacity = String(1 - progress);
-    if (config.id === "rinse") {
-      foamLayer.style.opacity = String(1 - progress);
-      dullLayer.style.opacity = String(1 - progress);
+    if (config.id === "foam") {
+      showFrame(foamLayer, "foam", 2 + frameForProgress(progress) * (FRAME_STEPS - 2) / FRAME_STEPS);
     }
-    if (config.id === "dry") residueGroup.style.setProperty("--residue-opacity", String(1 - progress));
+    if (config.id === "makeup_pad") {
+      showFrame(makeupLayer, "makeup", FRAME_STEPS - frameForProgress(progress));
+    }
+    if (config.id === "rinse") {
+      const remainingFrame = FRAME_STEPS - frameForProgress(progress);
+      showFrame(foamLayer, "foam", remainingFrame);
+      showFrame(dullLayer, "dull", remainingFrame);
+    }
+    if (config.id === "dry") {
+      showFrame(residueLayer, "residue", FRAME_STEPS - frameForProgress(progress));
+    }
     if (progress >= 1) completeCurrent();
   }
 
@@ -1340,7 +1366,7 @@
     medicineProgress.set(pimple.id, next);
     const total = PIMPLES.reduce((sum, candidate) => sum + (medicineProgress.get(candidate.id) || 0), 0);
     updateProgress(total / (PIMPLES.length * MEDICINE_GOAL));
-    careGlow.style.opacity = String(0.08 + total / (PIMPLES.length * MEDICINE_GOAL) * 0.42);
+    showFrame(careGlow, "glow", 1 + Math.round(total / (PIMPLES.length * MEDICINE_GOAL) * 5));
     spawnParticle(toPlayfieldPoint(pimple), "sparkle");
     medicatedPimples.add(pimple.id);
     marker?.classList.remove("applying");
@@ -1486,7 +1512,15 @@
   });
 
   placeSprites();
-  const ready = [...Object.values(bank), ...faceLayers].map(image => image.decode ? image.decode().catch(() => {}) : Promise.resolve());
+  const framePreloads = FRAME_FAMILIES.flatMap(family => (
+    Array.from({ length: FRAME_STEPS + 1 }, (_, index) => {
+      const image = new Image();
+      image.src = framePath(family, index);
+      return image;
+    })
+  ));
+  const ready = [...Object.values(bank), ...faceLayers, foamLayer, ...framePreloads]
+    .map(image => image.decode ? image.decode().catch(() => {}) : Promise.resolve());
   Promise.all(ready).then(() => {
     activateStage(0);
     track("pa_ready");
